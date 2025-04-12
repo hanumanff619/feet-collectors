@@ -6,33 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FeetCollectors.cz</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #f5f5f5; color: #333; text-align: center; padding: 20px; }
-        h1 { color: #e91e63; }
-        .btn { background-color: #e91e63; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px; }
-        .section { margin-top: 40px; }
-        footer { margin-top: 50px; font-size: 0.8em; color: #888; }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-color: #000;
+            background-image: url('trophy_feet_cropped.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            position: relative;
+            top: 65vh;
+        }
+        h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        .btn {
+            background-color: #e91e63;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+        footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            font-size: 0.8em;
+            color: #aaa;
+        }
     </style>
 </head>
 <body>
-    <h1>FeetCollectors.cz</h1>
-    <p>Jen ženské nožky. Jen pro fajnšmekry.</p>
-    <a class="btn" href="https://www.reddit.com/r/feet_collectors/" target="_blank">CHCI VIDĚT NOŽKY</a>
-    <div class="section">
-        <h2>Proč právě my?</h2>
-        <p>Pouze ženské nohy. Ponožky, punčochy, bosé. Respekt a pohoda. Sběratelský ráj.</p>
+    <div class="overlay">
+        <h1>FeetCollectors.cz</h1>
+        <a class="btn" href="https://www.reddit.com/r/feet_collectors/" target="_blank">VSTUP DO KOMUNITY</a>
     </div>
-    <div class="section">
-        <h2>Pravidla</h2>
-        <ul style="list-style: none; padding: 0;">
-            <li>Jen ženské chodidla</li>
-            <li>Věk 18+</li>
-            <li>Žádné mužské fotky</li>
-            <li>Respekt k autorům</li>
-            <li>Pohoda nebo ban</li>
-        </ul>
-    </div>
-    <footer>
-        FeetCollectors.cz — Protože ženské nožky jsou umění. Přidej se k nám.
-    </footer>
+    <footer>FeetCollectors.cz — Jen ženské nožky. Jen pro fajnšmekry.</footer>
 </body>
 </html>
