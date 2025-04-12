@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeetCollectors</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-color: #000;
+            text-align: center;
+        }
+        img {
+            width: 100%;
+            margin-top: 100px;
+        }
+        .overlay {
+            padding: 20px;
+            background-color: #000;
+        }
+        h1 {
+            margin: 20px 0 0 0;
+            font-size: 3em;
+        }
+        .btn {
+            background-color: #e91e63;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #aaa;
+        }
+        .counter {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 1em;
+            color: white;
+        }
+    </style>
+    <script>
+        let count = localStorage.getItem('visitCount') || 0;
+        count++;
+        localStorage.setItem('visitCount', count);
+        window.onload = function() {
+            document.getElementById('counter').innerText = 'Visitors: ' + count;
+        };
+    </script>
+</head>
+<body>
+    <div class="counter" id="counter"></div>
+    <img src="trophy_feet_final.png" alt="Trophy Feet">
+    <div class="overlay">
+        <h1>FeetCollectors</h1>
+        <a class="btn" href="https://www.reddit.com/r/feet_collectors/" target="_blank">ENTER THE COMMUNITY</a>
+        <footer>FeetCollectors — Only female feet. Only for real connoisseurs.</footer>
+    </div>
+</body>
+</html>
